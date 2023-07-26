@@ -20,9 +20,100 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              "slider1-bg": "url('./images/banner1.png')",
+              "slider2-bg": "url('./images/banner2.png')",
+              "slider3-bg": "url('./images/banner3.png')",
+              "slider4-bg": "url('./images/banner4.png')",
+            },
+          },
+        },
+      };
+    </script>
     <style>
-        
+      .font-lato{
+        font-family: Lato;
+      }
     </style>
   </head>
-  <body></body>
+  <body class="font-lato max-w-screen-xl mx-auto">
+    <!-- <div class="navbar  bg-[#F85559] rounded-full">
+        <div class="navbar-start flex-row-reverse">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+             
+              <li><a>About US</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu text-white menu-horizontal px-1">
+            
+            <li><a>Home</a></li>
+             
+            <li><a>About US</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-white normal-case text-xl">Fruit Burst</a>
+        <div class="navbar-end">
+            <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full max-w-xs" />
+        </div>
+      </div> -->
+
+
+<!-- carousel slider  -->
+
+      <main>
+        <!-- deal of the day section start  -->
+        <section class="flex px-4 flex-col gap-6 lg:flex-row justify-between lg:gap-40 items-center my-16">
+          <div class="">
+            <h1 class="text-5xl font-extrabold text-center mb-5 lg:text-left">Deal of the day</h1>
+            <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="">
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days 
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:50;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>  
+        </section>
+        <!-- Deal of the section End  -->
+      </main>
+  </body>
 </html>
